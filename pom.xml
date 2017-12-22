@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.aggregateframework</groupId>
     <artifactId>aggregate-framework</artifactId>
-    <version>2.10.0-SNAPSHOT</version>
+    <version>2.10.0</version>
 
     <packaging>pom</packaging>
     <name>aggregate-framework</name>
@@ -12,8 +12,8 @@
         <module>aggregate-framework-core</module>
         <module>aggregate-framework-spring</module>
         <module>aggregate-framework-ormlite</module>
-        <module>aggregate-framework-sample</module>
         <module>aggregate-framework-ignite</module>
+        <module>aggregate-framework-tutorial-sample</module>
     </modules>
 
     <properties>
