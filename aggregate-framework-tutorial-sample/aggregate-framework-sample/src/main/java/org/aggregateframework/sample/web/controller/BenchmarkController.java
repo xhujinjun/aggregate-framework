@@ -1,15 +1,10 @@
 package org.aggregateframework.sample.web.controller;
 
-import org.aggregateframework.sample.quickstart.command.domain.entity.PricedOrder;
 import org.aggregateframework.sample.quickstart.command.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
-
-import java.util.Collections;
-import java.util.List;
 
 /**
  * Created by changming.xie on 11/10/16.
@@ -21,6 +16,9 @@ public class BenchmarkController {
     @Autowired
     OrderService orderService;
 
+    /**
+     * 下单
+     */
     @RequestMapping("/place/{productId}/{price}")
     public String place(@PathVariable int productId, @PathVariable int price) {
         Long startTime = System.currentTimeMillis();
